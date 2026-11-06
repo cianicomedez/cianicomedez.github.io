@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="#">
+                <span class="logo-mark"><img src="visuals/logo.png" alt="Logo"></span>
+                Cian Nicomedez
+            </a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn btn-link nav-link" title="Toggle light/dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HOME / HERO -->
+
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT COLUMN: Profile Picture -->
+            <div class="col-lg-4 text-center mb-4">
+                <div class="avatar-box mx-auto reveal reveal-delay-1">
+
+                    <div class="avatar-name-bg" aria-hidden="true">
+                        Ian Cyrus Nicomedez
+                    </div>
+
+                    <div class="portrait-card">
+                        <img
+                            src="visuals/cian1.png"
+                            alt="Ian Cyrus Nicomedez"
+                            class="portrait-image portrait-image--first"
+                        >
+
+                        <img
+                            src="visuals/cian2.png"
+                            alt=""
+                            aria-hidden="true"
+                            class="portrait-image portrait-image--second"
+                        >
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Hero Content -->
+            <div class="col-lg-8 hero-content">
+
+                <p class="reveal reveal-delay-1">
+                    Hello, I'm Ian Cyrus Nicomedez
+                </p>
+
+                <p class="hero-sub reveal reveal-delay-2">
+                    Student, Programmer &amp; Game Developer
+                </p>
+
+                <h1 class="reveal reveal-delay-3">
+                    Always curious,
+                    <br>
+                    <span>ALWAYS CREATING</span>
+                </h1>
+
+                <div class="hero-text reveal reveal-delay-4">
+                    <p>
+                        Exploring new ideas, learning new skills, and turning
+                        creativity into meaningful projects through code.
+                    </p>
+                </div>
+
+                <!-- Portfolio Statistics -->
+                <div class="row g-3 portfolio-stats">
+
+                    <div class="col-12 col-sm-4">
+                        <div class="stat h-100">
+                            <h2>10+</h2>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="stat h-100">
+                            <h2>5+</h2>
+                            <p>Languages</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4">
+                        <div class="stat h-100">
+                            <h2>100%</h2>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="hero-skills d-flex flex-wrap gap-2 mt-4 reveal reveal-delay-5">
+                    <div class="skill-pill">HTML</div>
+                    <div class="skill-pill">CSS</div>
+                    <div class="skill-pill">JavaScript</div>
+                    <div class="skill-pill">Python</div>
+                    <div class="skill-pill">SQL</div>
+                    <div class="skill-pill">Bootstrap</div>
+                    <div class="skill-pill">Figma</div>
+                </div>
+
+            </div>
+            <!-- END RIGHT COLUMN -->
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- ABOUT AND EDUCATION -->
+<section id="about" class="about">
+    <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+        <h5 class="mb-4">Student, Programmer & Aspiring Developer</h5>
+
+        <p class="mb-4 text-white-100">
+            I'm Cian, a curious and determined individual who enjoys
+            exploring new possibilities, learning new things, and
+            continuously developing my knowledge and skills.
+        </p>
+
+        <div class="row align-items-start">
+            <div class="col-lg-8">
+                <p>
+                    My goal is to become successful by gaining knowledge,
+                    developing multiple skills, and continuously challenging
+                    myself to grow. I'm interested in web development,
+                    UI/UX design, and database management, where I can
+                    combine logical thinking with creativity to build
+                    useful and meaningful projects.
+                </p>
+
+                <ul class="about-list">
+                    <li>Enjoy solving problems through logic and creativity.</li>
+                    <li>Work effectively both independently and in a team.</li>
+                    <li>Always curious to explore new ideas, tools, and technologies.</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="about-card">
+                    <h5>Current Focus</h5>
+                    <p>
+                        Developing my skills in web development, UI/UX design,
+                        and databases while building projects such as ToneZone,
+                        Echo Protocol, and my personal portfolio website.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <!-- TECHNICAL SKILLS -->
+<section id="skills" class="skills-section">
+    <div class="container">
+
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="mb-3 text-white-100">
+            My current technical skills and tools reflect my interest in
+            web development, interface design, programming, and databases.
+            I'm continuously learning and looking for opportunities to improve.
+        </p>
+
+        <div class="skill-list mt-3">
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <div class="skill-pill">HTML</div>
+                <p>
+                    Used to structure web pages and organize content
+                    into clear, meaningful layouts.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="skill-pill">CSS</div>
+                <p>
+                    Used to style web pages, customize layouts, and
+                    improve the visual presentation of websites.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                <div class="skill-pill">JavaScript</div>
+                <p>
+                    Used to add interactive features and dynamic
+                    behavior to web projects.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <div class="skill-pill">Python</div>
+                <p>
+                    Applied in programming projects to practice
+                    logical thinking and problem-solving.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-pill">SQL</div>
+                <p>
+                    Used to learn how to organize, query, and manage
+                    structured data in databases.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                <div class="skill-pill">Bootstrap</div>
+                <p>
+                    Used to build responsive web layouts with reusable
+                    components and grid utilities.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-pencil-ruler"></i></div>
+                <div class="skill-pill">Figma</div>
+                <p>
+                    Used to explore interface design and create visual
+                    concepts for digital experiences.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Education Journey</h2>
+    <div class="timeline">
+
+    <div class="timeline-item">
+        <div class="glass timeline-card">
+            <h3>Mother Barbara Micarelli School (MBMS)</h3>
+            <p>Nursery</p>
+            <p>SY 2010 - 2012</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="glass timeline-card">
+            <h3>Mother Barbara Micarelli School (MBMS)</h3>
+            <p>Elementary</p>
+            <p>Grades 1 - 6</p>
+            <p>SY 2012 - 2018</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="glass timeline-card">
+            <h3>Mother Barbara Micarelli School (MBMS)</h3>
+            <p>Junior High School</p>
+            <p>Grades 7 - 10</p>
+            <p>SY 2018 - 2022</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="glass timeline-card">
+            <h3>First Asia Institute of Technology and Humanities (FAITH)</h3>
+            <p>Fidelis Senior High School</p>
+            <p>Grades 11 - 12</p>
+            <p>SY 2022 - 2024</p>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="glass timeline-card">
+            <h3>Polytechnic University of the Philippines - Sto. Tomas Campus</h3>
+            <p>Bachelor of Science in Information Technology</p>
+            <p>1st Year - 2nd Year</p>
+            <p>SY 2024 - Present</p>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="about-page">
+        <div class="about-container">
+
+            <header class="about-heading">
+                <span class="about-eyebrow">GET TO KNOW ME</span>
+                <h1>About <span>Me</span></h1>
+                <p>Discover who I am, what I do, and what inspires me.</p>
+            </header>
+
+            <div class="about-grid">
+
+                <aside class="about-profile">
+                    <div class="about-image">
+                        <img src="visuals/profcian.jpg" alt="Profile picture">
+                    </div>
+
+                    <h2>Ian Cyrus Silva Nicomedez</h2>
+                    <p class="about-role">IT Student & Developer</p>
+
+                    <p class="about-bio">
+                        I am a curious and versatile IT student who enjoys
+                        creating websites, applications, and interactive
+                        projects while continuously learning new skills.
+                    </p>
+
+                    <div class="about-socials">
+                        <a href="https://www.facebook.com/ciandriacy/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/yvndrvgn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/cianicomedez" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.tiktok.com/@cndriacy" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                    <a class="about-contact" href="mailto:iancyrusnicomedez@email.com">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
+                </aside>
+
+                <section class="about-content">
+
+                    <article class="about-panel">
+                        <h3><i class="fas fa-user"></i> Who I Am</h3>
+                        <p>
+                            I am an Information Technology student passionate
+                            about programming, web development, and creative
+                            problem-solving. I enjoy turning ideas into
+                            functional and visually appealing projects.
+                        </p>
+                        <p>
+                            I value teamwork, adaptability, and continuous
+                            improvement. My goal is to develop my technical
+                            skills and build projects that provide meaningful
+                            experiences for users.
+                        </p>
+                    </article>
+
+                    <article class="about-panel">
+                        <h3><i class="fas fa-code"></i> Technical Skills</h3>
+
+                        <div class="about-tech">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>VS Code</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                            <span>UI/UX Design</span>
+                            <span>Blender</span>
+                            <span>Figma</span>
+                        </div>
+                    </article>
+
+                    <article class="about-panel">
+                        <h3><i class="fas fa-rocket"></i> My Projects</h3>
+
+                        <div class="about-experience">
+                            <div class="about-project-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div>
+                                <h4>Virtual Library</h4>
+                                <p>
+                                    A library application for uploading,
+                                    organizing, searching, and reviewing
+                                    personal study notes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-experience">
+                            <div class="about-project-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div>
+                                <h4>Echo Protocol</h4>
+                                <p>
+                                    An original tactical shooter developed
+                                    with Python and Pygame, featuring enemy
+                                    AI, missions, classes, and inventory.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-experience">
+                            <div class="about-project-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div>
+                                <h4>ToneZone</h4>
+                                <p>
+                                    An exercise tracking desktop application
+                                    designed for gym and calisthenics workouts.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-experience">
+                            <div class="about-project-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div>
+                                <h4>Website Development</h4>
+                                <p>
+                                    Personal portfolio and fan websites
+                                    featuring responsive layouts, interactive
+                                    elements, and ecommerce concepts.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPORTS AND HOBBIES CAROUSEL -->
+<section class="services">
+
+    <header class="section-heading">
+        <p>Beyond the screen</p>
+
+        <button id="categoryToggle" type="button"
+                aria-label="Switch between sports and hobbies">
+            <span id="categoryTitle">Sports</span>
+            <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+        </button>
+
+        <div class="heading-underline"></div>
+    </header>
+
+    <section class="carousel" aria-label="Sports and hobbies showcase">
+
+        <button class="arrow prev" id="prevButton"
+                type="button" aria-label="Previous cards">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="viewport" id="viewport">
+            <div class="track" id="track"></div>
+        </div>
+
+        <button class="arrow next" id="nextButton"
+                type="button" aria-label="Next cards">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </section>
+
+    <div class="carousel-footer">
+        <span class="counter" id="counter" aria-live="polite">
+            01–03 / 06
+        </span>
+        <div class="dots" id="dots" aria-label="Choose a group of cards"></div>
+    </div>
+
+    <p class="hint">
+        <i class="fa-solid fa-hand-pointer"></i>
+        Click the title to switch categories, or use the arrows to explore.
+    </p>
+
+</section>
+
+<!-- FAQ SECTION -->
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+<section id="faq" class="faq-section">
+    <div class="container">
+
+        <h2 class="section-title text-center">Frequently Asked Questions</h2>
+        <p class="faq-subtitle text-center">
+            Have questions? Here are some answers about me and my work.
+        </p>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Who is Cian?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        I am Cian, a Bachelor of Science in Information Technology
+                        student at PUP Sto. Tomas with a passion for web development,
+                        software development, and UI/UX design.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What technologies do you use?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        I work with technologies such as HTML, CSS, JavaScript,
+                        Python, and SQL. I also explore networking and UI/UX design.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>What projects have you worked on?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        My projects include web design, gallery layouts,
+                        inventory management systems, and networking lab exercises.
+                        You can explore selected projects in my portfolio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>Are you open to collaborations?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes! I am open to collaborations, internships, and
+                        opportunities to learn, contribute, and build meaningful
+                        technology projects with others.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                    <span>How can I contact you?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        You can reach me through the social media links and
+                        contact information provided in the Let's Connect section
+                        of my portfolio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- PHOTO GALLERY -->
+<section id="gallery" class="gallery-section">
+        <div class="container-fluid">
+            <div class="gallery-heading">
+                <div>
+                    <p class="gallery-kicker">There was a time...</p>
+                    <h2 class="section-title">Photo Gallery</h2>
+                </div>
+                <a class="gallery-open-link" href="Bento/bento.html" target="_blank" rel="noopener">
+                    Open gallery <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+            </div>
+            <iframe id="galleryFrame" class="gallery-frame" src="Bento/bento.html" title="Photo gallery" scrolling="no"></iframe>
+        </div>
+    </section>
+
+<!-- CONTACT -->
+
+    <!-- CONTACT AND SOCIAL LINKS -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">
+            Let's Connect
+        </h2>
+
+        <div class="contact glass mx-auto rounded-4 p-4">
+            <p class="lead text-white-50">
+                Open to collaborations, internships, and exciting technology projects.
+            </p>
+
+            <div class="socials mt-4">
+                <a href="https://www.facebook.com/ciandriacy" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/yvndrvgn" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/cianicomedez" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="mailto:iancyrusnicomedez@email.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- OVERLAPPING FEATURE CAROUSEL -->
+<section class="overlap-carousel" id="overlapCarousel">
+
+  <button class="carousel-arrow carousel-prev"
+          aria-label="Previous card">
+    &#8249;
+  </button>
+
+  <div class="carousel-viewport">
+    <div class="carousel-track"></div>
+  </div>
+
+  <button class="carousel-arrow carousel-next"
+          aria-label="Next card">
+    &#8250;
+  </button>
+
+</section>
+
+    <!-- FOOTER -->
+<footer class="footer-details">
+        <div class="container">
+            <p>© 2026 Cian Nicomedez. Built with passion and creativity.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
