@@ -57,6 +57,10 @@ input:focus-visible {
     border-bottom: 1px solid var(--border);
 }
 
+a {
+    text-decoration: none;
+}
+
 .brand {
     display: flex;
     align-items: center;
