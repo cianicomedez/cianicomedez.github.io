@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minecraft Archive | Mob Directory</title>
+
+    <!-- Your existing portfolio CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Minecraft directory styles -->
+    <link rel="stylesheet" href="minecraft.css">
+
+    <meta name="theme-color" content="#080b16">
+</head>
+
+<body>
+
+<div class="minecraft-app">
+
+    <!-- NAVBAR -->
+    <nav class="mc-navbar">
+        <a href="#" class="mc-brand">
+            <span class="mc-logo"></span>
+            <span>Cian <span>Nicomedez</span></span>
+        </a>
+
+        <div class="mc-nav-actions">
+            <a href="">Portfolio</a>
+            <a href="#directory">Directory</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="mc-hero">
+        <div class="mc-glow mc-glow-one"></div>
+        <div class="mc-glow mc-glow-two"></div>
+
+        <div class="mc-hero-content">
+            <span class="mc-eyebrow">THE WORLD OF MINECRAFT</span>
+
+            <h1>
+                Discover the
+                <span>Mobs.</span>
+            </h1>
+
+            <p>
+                Explore the creatures of Minecraft.
+                Discover their characteristics, behavior,
+                and classifications in one archive.
+            </p>
+
+            <a href="#directory" class="mc-primary-btn">
+                Explore the Archive
+                <span>→</span>
+            </a>
+        </div>
+
+        <div class="mc-hero-decoration">
+            <div class="mc-steve-glow"></div>
+
+            <div class="mc-steve-container">
+                <img
+                    id="heroSteve"
+                    class="mc-steve-image"
+                    src=""
+                    alt="Steve from Minecraft"
+                >
+            </div>
+
+            <div class="mc-steve-label">
+                <span>PLAYER / 001</span>
+                <h3>STEVE</h3>
+                <p>The original adventurer.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATISTICS -->
+    <section class="mc-stats-section">
+        <div class="mc-stats-grid">
+            <div class="mc-stat">
+                <h2 id="totalMobs">--</h2>
+                <p>Archived Mobs</p>
+            </div>
+
+            <div class="mc-stat">
+                <h2 id="passiveCount">--</h2>
+                <p>Passive</p>
+            </div>
+
+            <div class="mc-stat">
+                <h2 id="neutralCount">--</h2>
+                <p>Neutral</p>
+            </div>
+
+            <div class="mc-stat">
+                <h2 id="hostileCount">--</h2>
+                <p>Hostile</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIRECTORY -->
+    <main id="directory" class="mc-directory">
+
+        <div class="mc-section-heading">
+            <div>
+                <span class="mc-eyebrow">DATABASE / 001</span>
+                <h2>Mob Directory<span>.</span></h2>
+                <p>Browse and discover Minecraft creatures.</p>
+            </div>
+
+            <span id="resultCount" class="mc-result-count">
+                Loading archive...
+            </span>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="mc-controls">
+            <div class="mc-search">
+                <span>⌕</span>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search mobs..."
+                    autocomplete="off"
+                >
+                <kbd>SEARCH</kbd>
+            </div>
+
+            <select id="sortSelect" class="mc-select">
+                <option value="az">Name: A - Z</option>
+                <option value="za">Name: Z - A</option>
+            </select>
+        </div>
+
+        <!-- FILTERS -->
+        <div class="mc-filters">
+            <button class="mc-filter active" data-filter="all">
+                All Mobs
+            </button>
+
+            <button class="mc-filter" data-filter="passive">
+                Passive
+            </button>
+
+            <button class="mc-filter" data-filter="neutral">
+                Neutral
+            </button>
+
+            <button class="mc-filter" data-filter="hostile">
+                Hostile
+            </button>
+
+            <button class="mc-filter" data-filter="boss">
+                Bosses
+            </button>
+        </div>
+
+        <!-- STATUS -->
+        <div id="loadingState" class="mc-status">
+            <div class="mc-loader"></div>
+            <p>Loading Minecraft database...</p>
+        </div>
+
+        <div id="errorState" class="mc-status" hidden>
+            <h3>Unable to load the archive.</h3>
+            <p>Check your internet connection and try again.</p>
+            <button id="retryButton" class="mc-primary-btn">
+                Retry
+            </button>
+        </div>
+
+        <!-- MOB GRID -->
+        <div id="mobGrid" class="mc-grid"></div>
+
+        <!-- EMPTY STATE -->
+        <div id="emptyState" class="mc-empty" hidden>
+            <h3>No mobs found.</h3>
+            <p>Try another search or filter.</p>
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="mc-pagination">
+            <button id="prevPage" disabled>← Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPage">Next →</button>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mc-footer">
+        <p>
+            Cian Nicomedez © 2026
+            <span>•</span>
+            Built with HTML, CSS & JavaScript
+        </p>
+    </footer>
+
+    <!-- DETAIL MODAL -->
+    <div id="mobModal" class="mc-modal" aria-hidden="true">
+        <div class="mc-modal-backdrop" data-close="true"></div>
+
+        <div class="mc-modal-content" role="dialog"
+             aria-modal="true" aria-labelledby="modalName">
+
+            <button class="mc-modal-close" id="closeModal"
+                    aria-label="Close modal">
+                ×
+            </button>
+
+            <div class="mc-modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div class="mc-modal-info">
+                <span id="modalCategory" class="mc-tag"></span>
+                <h2 id="modalName"></h2>
+                <p id="modalDescription"></p>
+
+                <a id="wikiLink" href="#" target="_blank"
+                   rel="noopener noreferrer">
+                    Read more on Minecraft Wiki →
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="minecraft.js"></script>
+</body>
+</html>
