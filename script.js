@@ -816,7 +816,7 @@ document.querySelectorAll(".faq-question").forEach(
             image: "visuals/personalportfolio.jpg",
             color: "#7657f6",
             buttonText: "View Portfolio",
-            link: "home"
+            link: ""
         },
         {
             title: "Activity 2: Cian Archives — Wheel Gallery",
