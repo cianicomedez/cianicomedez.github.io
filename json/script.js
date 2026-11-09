@@ -74,6 +74,9 @@ app.innerHTML = `
                 <span class="brand-icon">✳</span>
                 <span>WHEEL ARCHIVE</span>
             </div>
+            <a href="https://cianicomedez.github.io/">
+                <span class="nav-label">Portfolio</span>
+            </a>
             <span class="nav-label">WHEEL ARCHIVE / 001</span>
         </nav>
 
